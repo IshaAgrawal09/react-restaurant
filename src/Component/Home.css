@@ -28,10 +28,17 @@
     width: 50%;
     border-radius: 7px;
     background-color: rgb(236, 96, 45);
-    margin: 10% 0 0 15%;
+    margin: 6% 0 0 15%;
     padding: 2% 7%;
 }
-
+#newUser{
+    margin-top: 4%;
+}
+#newUser a{
+    margin-left: 1.5%;
+    color: rgb(236, 96, 45);
+    /* text-decoration: none; */
+}
 .loginImage {
     width: 40%;
 }

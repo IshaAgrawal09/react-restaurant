@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Signup.css"
+import "./Signup.css";
+import { Link } from "react-router-dom";
 import Home from "./Home";
-
 const Signup = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -62,13 +62,14 @@ const Signup = (props) => {
   };
   console.log(props.userArrChild);
 
-  return logged ? (
+  return (
+  logged ? (
     <Home userArr={props.userArrChild} />
   ) : (
     <div className="signup">
-      
       <div className="SignupBody">
-      <h2>Sign up</h2>
+        <h2>Sign up</h2>
+        <p id="account">Already have an Account? <Link to="/login">Login</Link></p>
         <div className="form">
           <p id="error">{error}</p>
           <table>
@@ -118,21 +119,20 @@ const Signup = (props) => {
                   />
                 </td>
               </tr>
-             
-               
-                  
-                
-             
             </tbody>
           </table>
-          <button onClick={signup} id='signupButton'>Sign up</button>
+          <button onClick={signup} id="signupButton">
+            Sign up
+          </button>
         </div>
+        <p id="offer">50% OFF on Your First Purchase</p>
       </div>
       <div className="SignupImage">
         <img src="./sidelogo.jpg" alt="" />
       </div>
     </div>
-  );
+  )
+  )
 };
 
 export default Signup;

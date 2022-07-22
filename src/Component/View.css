@@ -144,6 +144,15 @@
     text-align: justify !important;
    
 }
+#back{
+    margin: 2% 0 2% 45%;
+    padding: .5% 5%;
+    color: white;
+    border: none;
+    background-color: rgb(236, 96, 45);
+    border-radius: 5px;
+    text-decoration: none;
+}
 
 @media (max-width: 780px){
     .timing{

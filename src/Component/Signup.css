@@ -16,6 +16,14 @@
 .form {
   padding-top: 4%;
 }
+#account{
+  margin-top: 4%;
+  color: gray;
+  font-size: 14px;
+}
+#account a{
+  color: rgb(236, 96, 45);
+}
 
 .form input {
   border-radius: 7px;
@@ -43,6 +51,26 @@
   color: red;
 }
 
+#offer{
+  margin: 10% 10% 5%;
+  border-radius: 8px;
+  padding: 5% 10%;
+  display: inline-block;
+  color: white;
+  /* height:300px; */
+    /* width:300px; */
+    /* border:1px solid black; */
+    /* font-size:30px; */
+    background: linear-gradient(130deg, rgb(201, 65, 65), #bda1a1, rgb(202, 16, 16));
+    background-size: 200% 200%;
+    animation: Animation 5s ease infinite;
+  
+}
+@keyframes Animation { 
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+}
 @media (max-width: 700px) {
   .SignupBody {
     width: 100%;

@@ -1,14 +1,21 @@
 import React, { useState } from "react";
 import restaurantList from "./test";
+import { Link } from "react-router-dom";
 import "./View.css"
+import Menu from "./Menu";
 const View = (props) => {
   const [list, setList] = useState(restaurantList["restaurants"]);
+  const [logged,setLogged] = useState(false)
 
+  const back = () =>{
+    setLogged(true)
+  }
   const val = list.find((item) => item.id == props.id);
   // debugger;
   console.log(val.operating_hours);
 
   return (
+    logged?<Menu />:
     <div className="viewDiv">
   
         <div className="title">
@@ -93,6 +100,7 @@ const View = (props) => {
           })}
           
           </div>
+          <button id="back" onClick={back}>Back</button>
    </div>
   );
 };

@@ -41,6 +41,7 @@ const Menu = () => {
   };
 
   return view ? (
+    
     <View id={id} />
   ) : (
     <div className="menu">
